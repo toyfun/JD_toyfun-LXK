@@ -12,7 +12,7 @@ let shareCodes = [
 ]
 
 // 从日志获取互助码
-const logShareCodes = require('./utils/jdShareCodes');
+const logShareCodes = require('./jdShareCodes');
 if (logShareCodes.DREAM_FACTORY_SHARE_CODES.length > 0 && !process.env.DREAM_FACTORY_SHARE_CODES) {
   process.env.DREAM_FACTORY_SHARE_CODES = logShareCodes.DREAM_FACTORY_SHARE_CODES.join('&');
 }
