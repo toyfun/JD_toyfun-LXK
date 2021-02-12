@@ -12,7 +12,7 @@ let FruitShareCodes = [
 ]
 
 // 从日志获取互助码
-const logShareCodes = require('./utils/jdShareCodes');
+const logShareCodes = require('./jdShareCodes');
 if (logShareCodes.FRUITSHARECODES.length > 0 && !process.env.FRUITSHARECODES) {
   process.env.FRUITSHARECODES = logShareCodes.FRUITSHARECODES.join('&');
 }
